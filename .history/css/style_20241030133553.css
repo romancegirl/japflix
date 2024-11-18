@@ -1,0 +1,45 @@
+.img-card-fit {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-cont {
+    height: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.card-content{
+    height: 150px;
+    overflow: auto;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+  }
+
+.checked{
+    color: orange;
+}
+
+.offcanvas-top{
+    height: fit-content;
+}
+
+.list-group-item .d-flex {
+    gap: 10px; /* Espacio entre el texto y las estrellas */
+}
+
+.list-group-item .fa-star {
+    color: gold; /* Cambia el color de las estrellas si quieres */
+}
+
+
+#movieGenres {
+    font-style: italic;
+}
+
+.dropdown-menu {
+    padding: 2rem;
+}

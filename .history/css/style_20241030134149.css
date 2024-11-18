@@ -1,0 +1,51 @@
+.img-card-fit {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-cont {
+    height: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.card-content{
+    height: 150px;
+    overflow: auto;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+  }
+
+.checked{
+    color: orange;
+}
+
+.offcanvas-top{
+    height: fit-content;
+}
+
+.list-group-item .d-flex {
+    gap: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .list-group-item .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .list-group-item .d-flex div {
+        margin-top: 8px;
+    }
+}
+
+#movieGenres {
+    font-style: italic;
+}
+
+.dropdown-menu {
+    padding: 2rem;
+}

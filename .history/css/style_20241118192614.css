@@ -1,0 +1,149 @@
+body {
+    background-color: #1C1E1F;
+    color: #B2B1B0;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/background.png');
+    background-size: 80rem;
+    background-position: top 0.2rem right 2.5rem;
+    background-repeat: repeat;
+}
+
+input[type="search"] {
+    background-color: #181A1B;
+    border: 1px solid #B2B1B0;
+    color: #B2B1B0;
+}
+
+input[type="search"]:focus {
+    box-shadow: 0 0 10px #96242F;
+    background-color: #181A1B;
+    border: 1px solid #96242F;
+    color: #B2B1B0;
+}
+
+.offcanvas-body {
+    background-color: #1C1E1F;
+    color: #B2B1B0;
+}
+
+.img-card-fit {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-cont {
+    height: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.card-content {
+    height: 150px;
+    overflow: auto;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+}
+
+.checked {
+    color: orange;
+}
+
+.offcanvas-top {
+    height: fit-content;
+}
+
+.list-group-item .d-flex {
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .list-group-item .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-group-item .d-flex p,
+    .list-group-item .d-flex div {
+        align-self: flex-start;
+        width: 100%;
+        margin: 0;
+    }
+
+    .list-group-item .d-flex div {
+        margin-top: 8px;
+    }
+}
+
+#movieGenres {
+    font-style: italic;
+}
+
+.dropdown-menu {
+    padding: 1rem 2rem;
+    color: #B2B1B0;
+
+}
+
+footer {
+    background-color: #DC1A28;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+footer p {
+    color: #c3c2c2
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9b9a9b;
+    transform: scale(1.05);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+footer .float-end {
+    transform: translateY(50%); /* Ajusta hacia arriba la mitad de su altura */
+}
+
+
+
+
+
+.no-results-message {
+    border: 5px dashed red;
+    padding: 20px;
+    margin: 2rem auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.double {
+    border: 10px double #d71a2d;
+}
+
+#movieTitle {
+    border: 10px double #d71a2d;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+
+#lista>.list-group-item.double:hover {
+    background-color: #393939 !important;
+    /* Un color más claro */
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    cursor: pointer;
+}

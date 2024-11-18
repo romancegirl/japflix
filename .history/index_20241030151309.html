@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Japflix</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <main class="flex-grow-1">
+    <div class="text-center container">
+      <div class="row py-lg-3">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light"><img src="img/japflix.png" alt=""></h1>
+          <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: The Lion King">
+          <button class="btn btn-danger m-2" id="btnBuscar">Buscar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="album">
+      <ul class="list-group container" id="lista">
+      </ul>
+    </div>
+  </main>
+
+  <footer class="text-muted py-3">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">
+        Jovenes a Programar</a>, generado con fines estrictamente educativos.</p>
+    </div>
+  </footer>
+
+  <div class="offcanvas offcanvas-top" id="movieDetails" tabindex="-1" aria-labelledby="movieDetailsLabel">
+    <div class="offcanvas-header">
+      <h5 id="movieTitle"></h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p id="movieOverview"></p>
+      <p><strong>Géneros:</strong> <span id="movieGenres"></span></p>
+      <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="btnInfo">Más
+        información</button>
+      <ul class="dropdown-menu">
+        <li><strong>Año de lanzamiento:</strong> <span id="movieYear"></span></li>
+        <hr>
+        <li><strong>Duración:</strong> <span id="movieDuration"></span> min</li>
+        <hr>
+        <li><strong>Presupuesto:</strong> $<span id="movieBudget"></span></li>
+        <hr>
+        <li><strong>Ganancias:</strong> $<span id="movieRevenue"></span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+
+</html>

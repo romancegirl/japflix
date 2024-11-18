@@ -1,0 +1,97 @@
+body {
+    background-color: #1C1E1F; /* Color de fondo para todo el body */
+    color: #B2B1B0; /* Color de letra */
+}
+
+input[type="search"] {
+    background-color: #181A1B; /* Color de fondo para la barra de búsqueda */
+    border: 1px solid #B2B1B0; /* Borde de la barra de búsqueda */
+    color: #B2B1B0; /* Color de letra para la barra de búsqueda */
+}
+
+input[type="search"]:focus {
+    box-shadow: 0 0 10px #96242F; /* Glow rojo cuando se hace clic en la barra de búsqueda */
+    background-color: #181A1B; /* Color de fondo para la barra de búsqueda */
+    border: 1px solid #B2B1B0; /* Borde de la barra de búsqueda */
+    color: #B2B1B0;
+}
+
+.offcanvas-body {
+    background-color: #1C1E1F;
+    color: #B2B1B0;
+}
+
+.img-card-fit {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-cont {
+    height: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.card-content {
+    height: 150px;
+    overflow: auto;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+}
+
+.checked {
+    color: orange;
+}
+
+.offcanvas-top {
+    height: fit-content;
+}
+
+.list-group-item .d-flex {
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .list-group-item .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-group-item .d-flex p,
+    .list-group-item .d-flex div {
+        align-self: flex-start;
+        width: 100%;
+        margin: 0;
+    }
+
+    .list-group-item .d-flex div {
+        margin-top: 8px;
+    }
+}
+
+#movieGenres {
+    font-style: italic;
+}
+
+.dropdown-menu {
+    padding: 1rem 2rem;
+}
+footer {
+    background-color: #DC1A28;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .no-results-message {
+    border: 2px dotted red;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
